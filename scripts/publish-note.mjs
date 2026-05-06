@@ -8,7 +8,7 @@ const STATE_PATH = 'auth/note-storage-state.json';
 
 const HELP = `\
 Usage:
-  node scripts/publish-note.mjs --file <markdown-path> [--keep-open]
+  note-bsky-post --file <markdown-path> [--keep-open]
 
 Options:
   --file, -f      公開する Markdown 記事のパス

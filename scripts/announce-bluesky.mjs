@@ -7,8 +7,8 @@ import { basename, extname } from 'node:path';
 
 const HELP = `\
 Usage:
-  node scripts/announce-bluesky.mjs --text-file <path> [--url <url>] [--image <path>] [--dry-run]
-  node scripts/announce-bluesky.mjs --text "<post body>" [--url <url>] [--image <path>] [--dry-run]
+  note-bsky-announce --text-file <path> [--url <url>] [--image <path>] [--dry-run]
+  note-bsky-announce --text "<post body>" [--url <url>] [--image <path>] [--dry-run]
 
 Options:
   --text, -t        投稿本文（CLI 引数で直接渡す）
@@ -18,8 +18,8 @@ Options:
   --dry-run         投稿せず、送信予定の record を表示して終了
   --help, -h        このヘルプを表示
 
-環境変数（.env）:
-  BSKY_HANDLE         例: osprey74.com
+環境変数（.env / CWD 相対で読み込み）:
+  BSKY_HANDLE         Bluesky ハンドル（例: yourname.bsky.social）
   BSKY_APP_PASSWORD   App Password（メインパスワードは使わない）
 `;
 
