@@ -1,0 +1,9 @@
+# Node.js
+node_modules/
+
+# 認証情報（App Password など）
+.env
+.env.local
+
+# Playwright のログインセッション情報・観察ダンプ
+auth/

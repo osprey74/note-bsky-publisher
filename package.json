@@ -1,0 +1,52 @@
+{
+  "name": "note-bsky-publisher",
+  "version": "0.1.0",
+  "description": "Markdown 記事を note に下書き保存し、Bluesky に告知文を投稿する CLI ツール",
+  "type": "module",
+  "bin": {
+    "note-bsky-login": "./scripts/note-login.mjs",
+    "note-bsky-explore": "./scripts/note-explore.mjs",
+    "note-bsky-post": "./scripts/publish-note.mjs",
+    "note-bsky-announce": "./scripts/announce-bluesky.mjs"
+  },
+  "scripts": {
+    "login": "node scripts/note-login.mjs",
+    "explore": "node scripts/note-explore.mjs",
+    "post": "node scripts/publish-note.mjs",
+    "announce": "node scripts/announce-bluesky.mjs"
+  },
+  "files": [
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.19.13",
+    "dotenv": "^16.4.7",
+    "playwright": "^1.59.1"
+  },
+  "keywords": [
+    "note",
+    "note.com",
+    "bluesky",
+    "atproto",
+    "playwright",
+    "cli",
+    "automation",
+    "claude-code",
+    "markdown"
+  ],
+  "author": "osprey74",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/osprey74/note-bsky-publisher.git"
+  },
+  "homepage": "https://github.com/osprey74/note-bsky-publisher",
+  "bugs": {
+    "url": "https://github.com/osprey74/note-bsky-publisher/issues"
+  }
+}
