@@ -84,6 +84,16 @@ note-bsky-announce \
 
 リッチテキストの facets（クリッカブルな URL・ハッシュタグ）は自動検出されます。
 
+### Bluesky 投稿の文字数を実測（投稿前チェック）
+
+```bash
+note-bsky-count --text-file path/to/announcement.txt
+```
+
+- @atproto/api の `RichText.graphemeLength` で書記素（絵文字含む）を実測
+- 300 を超えた場合は `graphemeLength: NNN/300 (超過 +M)` と表示して exit code 1
+- 認証情報（`.env`）は不要。投稿前の下書き段階で手軽にチェックできる
+
 ### note に下書き保存
 
 ```bash

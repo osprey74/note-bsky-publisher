@@ -7,13 +7,15 @@
     "note-bsky-login": "./scripts/note-login.mjs",
     "note-bsky-explore": "./scripts/note-explore.mjs",
     "note-bsky-post": "./scripts/publish-note.mjs",
-    "note-bsky-announce": "./scripts/announce-bluesky.mjs"
+    "note-bsky-announce": "./scripts/announce-bluesky.mjs",
+    "note-bsky-count": "./scripts/count-grapheme.mjs"
   },
   "scripts": {
     "login": "node scripts/note-login.mjs",
     "explore": "node scripts/note-explore.mjs",
     "post": "node scripts/publish-note.mjs",
-    "announce": "node scripts/announce-bluesky.mjs"
+    "announce": "node scripts/announce-bluesky.mjs",
+    "count": "node scripts/count-grapheme.mjs"
   },
   "files": [
     "scripts/",
