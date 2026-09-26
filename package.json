@@ -7,6 +7,7 @@
     "note-bsky-login": "./scripts/note-login.mjs",
     "note-bsky-explore": "./scripts/note-explore.mjs",
     "note-bsky-post": "./scripts/publish-note.mjs",
+    "note-bsky-overwrite": "./scripts/overwrite-note-draft.mjs",
     "note-bsky-announce": "./scripts/announce-bluesky.mjs",
     "note-bsky-count": "./scripts/count-grapheme.mjs"
   },
@@ -14,6 +15,7 @@
     "login": "node scripts/note-login.mjs",
     "explore": "node scripts/note-explore.mjs",
     "post": "node scripts/publish-note.mjs",
+    "overwrite": "node scripts/overwrite-note-draft.mjs",
     "announce": "node scripts/announce-bluesky.mjs",
     "count": "node scripts/count-grapheme.mjs"
   },
